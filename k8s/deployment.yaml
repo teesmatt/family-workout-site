@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: living-room-gym
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: living-room-gym
+  template:
+    metadata:
+      labels:
+        app: living-room-gym
+    spec:
+      containers:
+        - name: living-room-gym
+          image: 808962273082.dkr.ecr.us-east-1.amazonaws.com/living-room-gym:latest
+          resources:
+            requests:
+              memory: "8Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "250m"
+          ports:
+            - name: web
+              containerPort: 3001

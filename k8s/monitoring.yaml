@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: living-room-gym
+spec:
+  selector:
+    matchLabels:
+      app: living-room-gym
+  endpoints:
+  - port: web
+  namespaceSelector:
+    any: true
