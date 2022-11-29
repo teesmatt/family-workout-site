@@ -1,0 +1,15 @@
+{
+    "name": "canary",
+    "version": "1.0.0",
+    "description": "A simple app to test new monitoring infrastructure",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+    },
+    "author": "Mark Kilfoil",
+    "dependencies": {
+      "express": "^4.18.1",
+      "prom-client": "^14.0.1"
+    }
+  }
