@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: living-room-gym
-          image: 658177540286.dkr.ecr.us-east-1.amazonaws.com/living-room-gym:latest
+          image: 808962273082.dkr.ecr.us-east-1.amazonaws.com/living-room-gym:latest
           resources:
             requests:
               memory: "8Mi"
