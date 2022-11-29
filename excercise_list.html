@@ -1,0 +1,18 @@
+<html>
+    <div>
+        <h1>Select your goal</h1>
+        <div>
+            <select name="Goal" id="cars" onchange="goalSelect(this)">
+                <option value="volvo">Weight loss</option>
+                <option value="saab">Stay Fit</option>
+                <option value="mercedes">Build muscle</option>
+                <option value="audi">Cardio Only</option>
+              </select>
+        </div>
+    </div>
+    <script>
+        function goalSelect(optionVal) {
+            console.log("Selected: " + optionVal.value)
+        }
+    </script>
+</html>
